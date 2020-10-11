@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "HelveticaNeue-Bold";
+    src: url("./fonts/helveticaneue-bold.ttf");
+}
+
+@font-face {
+    font-family: "HelveticaNeue-Medium";
+    src: url("fonts/helvetica-neue-medium.ttf");
+}
+
+@font-face {
+    font-family: "HelveticaNeue-Regular";
+    src: url("fonts/helvetica-neue-medium.ttf");
+}
+
+:root {
+    --darkGray: #707070;
+    --mediumGray: #888888;
+    --fairGray: #00000029;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: HelveticaNeue-Regular;
+}
+
+h1{
+    font-family: HelveticaNeue-Bold;
+}
+
+.header h1 {
+    margin-block-start: 0px;
+}
+
+.header h2{
+    margin-block-end: 0px;
+    font-size: 15px;
+    padding-top: 5vh;
+}
+
+.header {
+    background-color: var(--darkGray);
+    color: var(--white);
+    text-align: center;
+}
+
+.header__border_bottom {
+    height: 20vh;
+    background: linear-gradient(
+            to bottom left, var(--darkGray) 0%,
+            var(--darkGray) 50%,
+            var(--white) 50%,
+            var(--white) 100%);
+}
+
+.header button{
+    border: none;
+    border-radius: 3px;
+    color: var(--mediumGray);
+    padding: 10px 20px;
+    margin: 0 2vw;
+}
+
+.header p {
+    font-size: 12px;
+    margin-bottom: 10vh;
+}
+
+.survey__row{
+    display: flex;
+    margin: auto;
+    width: 60%;
+}
+
+.survey__column_text{
+    flex:66%;
+}
+
+.survey__column_form{
+    flex: 33%;
+}
+
+.products{
+    margin: auto;
+    width: 60%;
+}
+
+.products h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.products h2 span {
+    background:#fff;
+    padding:0 10px;
+}
+
+.footer {
+    background-color: var(--darkGray);
+    color: var(--white);
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 8vh;
+}
+
+.footer__border_top{
+    height: 20vh;
+    background: linear-gradient(
+            to bottom right, var(--white) 0%,
+            var(--white) 50%,
+            var(--darkGray) 50%,
+            var(--darkGray) 100%);
+}
+
+.footer__text{
+    margin-top: 8vh;
+}
