@@ -28,7 +28,7 @@ body {
     font-family: HelveticaNeue-Regular;
 }
 
-h1{
+h1 {
     font-family: HelveticaNeue-Bold;
 }
 
@@ -36,7 +36,7 @@ h1{
     margin-block-start: 0px;
 }
 
-.header h2{
+.header h2 {
     margin-block-end: 0px;
     font-size: 15px;
     padding-top: 5vh;
@@ -57,12 +57,13 @@ h1{
             var(--white) 100%);
 }
 
-.header button{
+.header button {
     border: none;
     border-radius: 3px;
     color: var(--mediumGray);
     padding: 10px 20px;
-    margin: 0 2vw;
+    margin: 0 1vw;
+    width: 15vw;
 }
 
 .header p {
@@ -70,21 +71,50 @@ h1{
     margin-bottom: 10vh;
 }
 
-.survey__row{
+.survey{
+    padding-top: 4vh;
+}
+
+.survey h2{
+    font-size: 20px;
+}
+
+.survey__row {
     display: flex;
     margin: auto;
     width: 60%;
+    color: var(--mediumGray);
 }
 
-.survey__column_text{
-    flex:66%;
+.survey__column_text {
+    flex: 63%;
+    padding-right: 3%;
 }
 
-.survey__column_form{
+.survey__column_form {
     flex: 33%;
 }
 
-.products{
+.survey input {
+    cursor: pointer;
+    padding: 12px;
+    font-size: 12px;
+    margin-bottom: 4vh;
+    height: 0vh;
+    width: 100%;
+}
+
+.survey_radio_button form{
+    height: 3vh;
+    display: inline-flex;
+}
+
+.survey__column_form form label{
+    font-size: 12px;
+    padding-top: 4vh;
+}
+
+.products {
     margin: auto;
     width: 60%;
 }
@@ -98,8 +128,55 @@ h1{
 }
 
 .products h2 span {
-    background:#fff;
-    padding:0 10px;
+    background: #fff;
+    padding: 0 10px;
+}
+#product_itens{
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+#product_itens .card{
+    width: 13vw;
+    padding: 1vw;
+    justify-content: space-evenly;
+}
+
+.img_card{
+    width: 100%;
+    height: auto;
+}
+
+.newsletter{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.newsletter h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.newsletter h2 span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.newsletter_form__row form{
+    display: flex;
+    margin: auto;
+    width: 60%;
+    color: var(--mediumGray);
+}
+
+.newsletter_form__column {
+    flex: 50%;
+    padding-right: 3%;
+    justify-content: space-around;
 }
 
 .footer {
@@ -110,7 +187,7 @@ h1{
     padding-bottom: 8vh;
 }
 
-.footer__border_top{
+.footer__border_top {
     height: 20vh;
     background: linear-gradient(
             to bottom right, var(--white) 0%,
@@ -119,6 +196,6 @@ h1{
             var(--darkGray) 100%);
 }
 
-.footer__text{
+.footer__text {
     margin-top: 8vh;
 }

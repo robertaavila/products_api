@@ -53,26 +53,60 @@
             </p>
         </div>
         <div class="survey__column_form">
-            <label for=""></label>
-            <input type="text">
-            <label for=""></label>
-            <input type="text">
-            <label for=""></label>
-            <input type="text">
-            <input type="radio">Feminino</input>
-            <input type="radio">Masculino</input>
+            <form action="">
+                <div>
+                    <label for="name">Seu nome:</label>
+                </div>
+                <input type="text" id="name">
+                <div>
+                    <label for="email">E-mail</label>
+                </div>
+                <input type="text" id="email">
+                <div>
+                    <label for="cpf">CPF: </label>
+                </div>
+                <input type="text" id="cpf">
+                <div class="survey_radio_button">
+                    <input type="radio">Masculino</input>
+                    <input type="radio">Feminino</input>
+                </div>
+                <button type="button">
+                    Enviar
+                </button>
+            </form>
         </div>
     </div>
 </div>
 
 <div class="products">
     <h2><span>Sua seleção especial</span></h2>
-    <button type="button">
+    <div id="product_itens">
+
+    </div>
+    <button type="button" id="nextPage">
         Ainda mais produtos aqui!
-    </button></div>
+    </button>
+</div>
+
 
 <div class="newsletter">
-
+    <h2><span>Compartilhe a novidade</span></h2>
+    <p>
+        Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
+    </p>
+    <div class="newsletter_form__row">
+        <div class="newsletter_form__column">
+            <form action="">
+                <label for="friend_name">Seu nome:</label>
+                <input type="text" id="friend_name">
+                <label for="friend_email">E-mail</label>
+                <input type="text" id="friend_email">
+                <button type="button">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </div>
 </div>
 
 <div class="footer">
