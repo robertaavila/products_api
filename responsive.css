@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+
+    .survey__row {
+        display: block;
+    }
+
+    #product_itens .card{
+        width: 80vw;
+        padding: 1vw;
+        justify-content: space-evenly;
+    }
+
+    .card__row{
+        display: flex;
+    }
+
+    .products .card__img{
+        margin: auto;
+        height: auto;
+        width: 90%;
+    }
+}
