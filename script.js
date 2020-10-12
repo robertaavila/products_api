@@ -84,6 +84,33 @@ var pageNumber = 1;
         });
 })();
 
+function validateFormSurvey(){
+    document.getElementById('error').innerHTML = '';
+    var control = 0;
+
+    if(document.getElementById('name').value === '') {
+        document.getElementById('error').innerHTML += 'É preciso informar o nome.&nbsp; '
+    }
+
+    var email = document.getElementById('email').value;
+    var check = email.indexOf('@');
+    var checkCom = email.indexOf('.com');
+    if(check <= 0 || checkCom <=0 -1) {
+        document.createElement('br');
+        document.getElementById('error').innerHTML += 'Informe um email válido.&nbsp; '
+    }
+
+    var cpf = document.getElementById('cpf').value;
+    var code = 4324;
+    console.log(typeof (cpf));
+    if(typeof(cpf) != 'number'){
+        document.getElementById('error').innerHTML += 'O cpf deve ser composto apenas por números.&nbsp; '
+    }
+
+    if(document.getElementById('male').checked === false && document.getElementById('female').checked === false){
+        document.getElementById('error').innerHTML += 'Escolha um gênero.'
+    }
+}
 
 
 

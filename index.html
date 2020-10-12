@@ -73,13 +73,14 @@
                     <input type="text" id="cpf" required>
                 </div>
                 <div id="survey__radio_button">
-                    <input type="radio" name="gender" required>Masculino</input>
-                    <input type="radio" name="gender" required>Feminino</input>
+                    <input type="radio" name="gender" id="male" required>Masculino</input>
+                    <input type="radio" name="gender" id="female" required>Feminino</input>
                 </div>
-                <button type="submit" id="survey__button" onclick="">
+                <button type="submit" id="survey__button" onclick="validateFormSurvey()">
                     Enviar
                 </button>
             </form>
+            <div id="error"></div>
         </div>
     </div>
 </div>

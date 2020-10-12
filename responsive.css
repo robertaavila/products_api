@@ -10,11 +10,11 @@
         justify-content: space-evenly;
     }
 
-    .card__row{
+    #product_itens .card__row{
         display: flex;
     }
 
-    .products .card__img{
+    #product_itens .card__img{
         margin: auto;
         height: auto;
         width: 90%;
