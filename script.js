@@ -2,14 +2,14 @@ var pageNumber = 1;
 
 (function addProducts() {
     var newPage;
-    console.log(pageNumber);
+    // console.log(pageNumber);
 
     var page = "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=" + pageNumber;
 
     window.onload = function () {
-        newPage = document.getElementById('nextPage').addEventListener('click', function () {
+        newPage = document.getElementById('products_nextPage').addEventListener('click', function () {
             pageNumber += 1;
-            console.log(pageNumber);
+            // console.log(pageNumber);
             addProducts();
         });
     }
@@ -19,10 +19,10 @@ var pageNumber = 1;
     productsPromise
         .then(data => data.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             let createItens = document.createElement('div');
             data.products.forEach((item) => {
-                console.log(item.image);
+                // console.log(item.image);
 
                 let card = document.createElement('div');
                 card.classList.add('card');
@@ -30,7 +30,7 @@ var pageNumber = 1;
                 let image = document.createElement('img');
                 image.classList.add('img_card');
                 image.setAttribute('src', item.image);
-                console.log(image);
+                // console.log(image);
                 card.appendChild(image);
 
                 let name = document.createElement('p');
@@ -58,8 +58,11 @@ var pageNumber = 1;
                 installments.innerHTML = ('Ou ' + item.installments.count + 'x de R$' + item.installments.value + '9');
                 card.appendChild(installments);
 
-                    let
-                product_itens = document.querySelector("#product_itens");
+                let button = document.createElement('button');
+                button.innerHTML = 'Comprar';
+                card.appendChild(button);
+
+                let product_itens = document.querySelector("#product_itens");
                 product_itens.appendChild(card);
 
             })

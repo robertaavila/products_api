@@ -81,6 +81,11 @@ h1 {
     font-size: 20px;
 }
 
+.survey p{
+    font-size: 12px;
+    max-width: 90%;
+}
+
 .survey__row {
     display: flex;
     margin: auto;
@@ -97,28 +102,45 @@ h1 {
     flex: 33%;
 }
 
-.survey input {
+#survey__inputs {
+max-width: 100%;
+}
+
+#survey__inputs input{
+    width: 100%;
+    margin-bottom: 4vh;
     cursor: pointer;
-    padding: 12px;
+    font-size: 12px;
+}
+
+#survey__radio_button{
+    display: inline;
     font-size: 12px;
     margin-bottom: 4vh;
-    height: 0vh;
+}
+
+#survey__radio_button input{
+    width: 6%;
+    margin: 0px 3px 0px 5px;
+}
+
+#survey__button{
+    margin-top: 2vh;
+    position: relative;
     width: 100%;
+    padding: 2px 6px;
 }
 
-.survey_radio_button form{
-    height: 3vh;
-    display: inline-flex;
-}
-
-.survey__column_form form label{
+.survey__column_form label{
     font-size: 12px;
     padding-top: 4vh;
 }
 
 .button_products{
     display: flex;
-    margin: auto;
+    margin: 7vh 0 15vh 0;
+    justify-content: center;
+
 }
 
 .products {
@@ -146,8 +168,8 @@ h1 {
 }
 
 #product_itens .card{
-    width: 13vw;
-    padding: 1vw;
+    width: 10vw;
+    padding: 2vw;
     justify-content: space-evenly;
 }
 
@@ -177,14 +199,21 @@ h1 {
     width: 60%;
     margin: auto;
     text-align: center;
+    padding-top: 4vh;
+}
+
+.newsletter p{
+    font-size: 14px;
+    margin-bottom: 10vh;
 }
 
 .newsletter h2 {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #000;
+    font-size: 18px;
     line-height: 0.1em;
-    margin: 10px 0 20px;
+    margin-bottom: 10vh;
 }
 
 .newsletter h2 span {
@@ -193,8 +222,7 @@ h1 {
 }
 
 .newsletter_form__row form{
-    display: flex;
-    margin: auto;
+    float: left;
     width: 60%;
     color: var(--mediumGray);
 }
@@ -202,7 +230,6 @@ h1 {
 .newsletter_form__column {
     flex: 50%;
     padding-right: 3%;
-    justify-content: space-around;
 }
 
 .footer {
