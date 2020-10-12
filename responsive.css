@@ -1,11 +1,114 @@
 @media (max-width: 768px) {
 
+    .header{
+        background-color: transparent;
+    }
+
+    .header button {
+        border: solid 1px  var(--mediumGray);
+        padding: 10px 20px;
+        margin: 0 1vw;
+        width: 15vw;
+        color: var(--mediumGray);
+
+    }
+
+    .header__title{
+        padding-bottom: 1vh;
+        background-color: var(--darkGray);
+    }
+
+    .header h1 {
+        font-size: 40px;
+        text-align: left;
+        margin-left: 3vw;
+        margin-block-end: 0px;
+    }
+
+    .header h2{
+        font-size: 20px;
+        text-align: left;
+        margin-left: 3vw;
+    }
+
+    .header p {
+        font-size: 14px;
+        text-align: left;
+        margin: 0 2vw 6vh 3vw;
+    }
+
+    .header__row{
+        display: block;
+        height: 20vh;
+        background: linear-gradient(
+                to bottom left, var(--darkGray) 0%,
+                var(--darkGray) 50%,
+                var(--white) 50%,
+                var(--white) 100%);
+    }
+
+    .header__column{
+        width: 80%;
+        margin: auto;
+    }
+
+    .header button {
+        width: 35vw;
+    }
+
+    #header__column_top{
+        margin: auto;
+    }
+
+    #header__column_bottom{
+        margin: auto;
+        margin-top: 4vh;
+
+    }
+
+    .header__border_bottom{
+       display: none;
+    }
+
+    .survey{
+        padding-top: 0;
+    }
+
     .survey__row {
         display: block;
+        width: 100%;
+    }
+
+    .survey__column_text{
+        width: 95vw;
+        line-height: 2.5vh;
+        padding: 0;
+        margin: auto;
+        margin-left: 5vw;
+    }
+
+    .survey__column_form {
+        width: 90vw;
+        margin: auto;
+        margin-top: 4vh;
+    }
+
+    #survey__inputs input{
+        padding: 0.7vh;
+        margin-bottom: 2vh;
+        width: 95%;
+    }
+
+    #survey__button{
+        padding: 1.5vh;
+    }
+
+    .products{
+        width: 95%;
     }
 
     #product_itens .card{
-        width: 80vw;
+        width: 95vw;
         padding: 1vw;
         justify-content: space-evenly;
     }
@@ -15,8 +118,28 @@
     }
 
     #product_itens .card__img{
-        margin: auto;
-        height: auto;
-        width: 90%;
+        /*margin: 0 2vh;*/
+        /*height: auto;*/
+        /*width: 100%;*/
+        /*width: 100%;*/
+        border: solid black 1px;
+    }
+
+    #card__
+
+    .newsletter_form__row{
+        display: block;
+    }
+
+    .footer {
+        padding-bottom: 4vh;
+    }
+
+    .footer__border_top {
+        height: 8vh;
+    }
+
+    .footer__text {
+        margin-top: 0;
     }
 }
