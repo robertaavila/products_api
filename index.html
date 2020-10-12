@@ -2,6 +2,7 @@
 <html lang="en">
 <script src="script.js"></script>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
 <head>
     <meta charset="UTF-8">
     <title>Seleção de produtos</title>
@@ -72,8 +73,8 @@
                     <input type="text" id="cpf" required>
                 </div>
                 <div id="survey__radio_button">
-                    <input type="radio">Masculino</input>
-                    <input type="radio">Feminino</input>
+                    <input type="radio" name="gender" required>Masculino</input>
+                    <input type="radio" name="gender" required>Feminino</input>
                 </div>
                 <button type="submit" id="survey__button" onclick="">
                     Enviar
@@ -110,7 +111,7 @@
             </div>
             <div class="newsletter_form__column">
                 <label for="friend_email">E-mail:</label>
-                <input type="text" id="friend_email" required>
+                <input type="text" id="friend_email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             </div>
 
         </div>

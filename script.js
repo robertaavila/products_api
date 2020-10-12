@@ -28,42 +28,54 @@ var pageNumber = 1;
                 let card = document.createElement('div');
                 card.classList.add('card');
 
+                let cardRow = document.createElement('div');
+                cardRow.classList.add('card__row');
+                card.appendChild(cardRow);
+
+                let cardLeft = document.createElement('div');
+                cardLeft.classList.add('card__column_left');
+                cardRow.appendChild(cardLeft);
+
                 let image = document.createElement('img');
                 image.classList.add('card__img');
                 image.setAttribute('src', item.image);
                 image.setAttribute('alt', 'imagem de produto');
                 // console.log(image);
-                card.appendChild(image);
+                cardLeft.appendChild(image);
+
+                let cardRight = document.createElement('div');
+                cardRight.classList.add('card__column_right');
+                cardRow.appendChild(cardRight);
 
                 let name = document.createElement('p');
                 name.classList.add('card__name');
                 name.innerHTML = (item.name);
-                card.appendChild(name);
+                cardRight.appendChild(name);
 
                 let description = document.createElement('p');
                 description.classList.add('card__description');
                 description.innerHTML = (item.description);
-                card.appendChild(description);
+                cardRight.appendChild(description);
 
                 let oldPrice = document.createElement('p');
                 oldPrice.classList.add('card__old_price');
                 oldPrice.innerHTML = ('De: R$' + item.oldPrice);
-                card.appendChild(oldPrice);
+                cardRight.appendChild(oldPrice);
 
                 let price = document.createElement('p');
                 price.classList.add('card__price');
                 price.innerHTML = ('Por: R$' + item.price);
-                card.appendChild(price);
+                cardRight.appendChild(price);
 
                 let installments = document.createElement('p');
                 installments.classList.add('card__installments');
                 installments.innerHTML = ('ou ' + item.installments.count + 'x de R$' + item.installments.value + '9');
-                card.appendChild(installments);
+                cardRight.appendChild(installments);
 
                 let button = document.createElement('button');
                 button.classList.add('card__button_buy');
                 button.innerHTML = 'Comprar';
-                card.appendChild(button);
+                cardRight.appendChild(button);
 
                 let product_itens = document.querySelector("#product_itens");
                 product_itens.appendChild(card);
