@@ -20,10 +20,8 @@ var pageNumber = 1;
     productsPromise
         .then(data => data.json())
         .then(data => {
-            // console.log(data);
             let createItens = document.createElement('div');
             data.products.forEach((item) => {
-                // console.log(item.image);
 
                 let card = document.createElement('div');
                 card.classList.add('card');
@@ -40,7 +38,6 @@ var pageNumber = 1;
                 image.classList.add('card__img');
                 image.setAttribute('src', item.image);
                 image.setAttribute('alt', 'imagem de produto');
-                // console.log(image);
                 cardLeft.appendChild(image);
 
                 let cardRight = document.createElement('div');
@@ -74,6 +71,9 @@ var pageNumber = 1;
 
                 let button = document.createElement('button');
                 button.classList.add('card__button_buy');
+                button.addEventListener('click', function () {
+                    alert('Produto inserido no carrinho.');
+                })
                 button.innerHTML = 'Comprar';
                 cardRight.appendChild(button);
 
@@ -85,11 +85,11 @@ var pageNumber = 1;
 })();
 
 function validateFormSurvey(){
-    document.getElementById('error').innerHTML = '';
+    document.getElementById('survey__error').innerHTML = '';
     var control = 0;
 
     if(document.getElementById('name').value === '') {
-        document.getElementById('error').innerHTML += 'É preciso informar o nome.&nbsp; '
+        document.getElementById('survey__error').innerHTML += 'É preciso informar o nome.&nbsp; '
     }
 
     var email = document.getElementById('email').value;
@@ -97,20 +97,36 @@ function validateFormSurvey(){
     var checkCom = email.indexOf('.com');
     if(check <= 0 || checkCom <=0 -1) {
         document.createElement('br');
-        document.getElementById('error').innerHTML += 'Informe um email válido.&nbsp; '
+        document.getElementById('survey__error').innerHTML += 'Informe um email válido.&nbsp; '
     }
 
     var cpf = document.getElementById('cpf').value;
     var code = 4324;
     console.log(typeof (cpf));
     if(typeof(cpf) != 'number'){
-        document.getElementById('error').innerHTML += 'O cpf deve ser composto apenas por números.&nbsp; '
+        document.getElementById('survey__error').innerHTML += 'O cpf deve ser composto apenas por números.&nbsp; '
     }
 
     if(document.getElementById('male').checked === false && document.getElementById('female').checked === false){
-        document.getElementById('error').innerHTML += 'Escolha um gênero.'
+        document.getElementById('survey__error').innerHTML += 'Escolha um gênero.'
     }
 }
 
 
 
+function validateFormNewsletter(){
+    document.getElementById('newsletter__error').innerHTML = '';
+    var control = 0;
+
+    if(document.getElementById('friend_name').value === '') {
+        document.getElementById('newsletter__error').innerHTML += 'É preciso informar o nome.&nbsp; '
+    }
+
+    var email = document.getElementById('friend_email').value;
+    var check = email.indexOf('@');
+    var checkCom = email.indexOf('.com');
+    if(check <= 0 || checkCom <=0 -1) {
+        document.createElement('br');
+        document.getElementById('newsletter__error').innerHTML += 'Informe um email válido.&nbsp; '
+    }
+}

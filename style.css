@@ -85,6 +85,22 @@ h1 {
     margin-bottom: 10vh;
 }
 
+.header__row{
+    display: flex;
+}
+
+.header__column{
+    width: 40%;
+}
+
+#header__column_top{
+    margin-left: 15vw;
+}
+
+#header__column_bottom{
+    margin-right: 15vw;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -102,7 +118,7 @@ html {
     max-width: 90%;
 }
 
-#error{
+#survey__error{
     margin-top: 2vh;
     color: red;
     font-size: 14px;
@@ -125,7 +141,7 @@ html {
 }
 
 #survey__inputs {
-max-width: 100%;
+    max-width: 100%;
 }
 
 #survey__inputs input{
@@ -256,6 +272,12 @@ max-width: 100%;
 .newsletter h2 span {
     background: #fff;
     padding: 0 10px;
+}
+
+#newsletter__error{
+    margin-top: 2vh;
+    color: red;
+    font-size: 14px;
 }
 
 .newsletter_form__row{

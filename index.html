@@ -9,33 +9,42 @@
 </head>
 <body>
 <div class="header">
-    <h2>
-        uma seleção de produtos
-    </h2>
-    <h1>
-        especial para você
-    </h1>
-    <p>
-        Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
-    </p>
-    <button type="button" onclick="window.open('https://linx.com.br')">
-        Conheça a Linx
-    </button>
-    <a href="#survey">
-        <button type="button">
-            Ajude o algoritmo
-        </button>
-    </a>
-    <a href="#products">
-        <button type="button">
-            Seus produtos
-        </button>
-    </a>
-    <a href="#newsletter">
-        <button type="button">
-            Compartilhe
-        </button>
-    </a>
+    <div class="header__title">
+        <h2>
+            uma seleção de produtos
+        </h2>
+        <h1>
+            especial para você
+        </h1>
+        <p>
+            Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!
+        </p>
+    </div>
+
+    <div class="header__row">
+        <div class="header__column" id="header__column_top">
+            <button type="button" onclick="window.open('https://linx.com.br')">
+                Conheça a Linx
+            </button>
+            <a href="#survey">
+                <button type="button">
+                    Ajude o algoritmo
+                </button>
+            </a>
+        </div>
+        <div class="header__column" id="header__column_bottom">
+            <a href="#products">
+                <button type="button">
+                    Seus produtos
+                </button>
+            </a>
+            <a href="#newsletter">
+                <button type="button">
+                    Compartilhe
+                </button>
+            </a>
+        </div>
+    </div>
     <div class="header__border_bottom">
 
     </div>
@@ -80,7 +89,7 @@
                     Enviar
                 </button>
             </form>
-            <div id="error"></div>
+            <div id="survey__error"></div>
         </div>
     </div>
 </div>
@@ -103,9 +112,11 @@
     <p>
         Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
     </p>
+    <div id="newsletter__error">
+
+    </div>
     <form action="" id="newsletter_form">
         <div class="newsletter_form__row">
-
             <div class="newsletter_form__column">
                 <label for="friend_name">Nome do seu amigo:</label>
                 <input type="text" id="friend_name" required>
@@ -114,9 +125,9 @@
                 <label for="friend_email">E-mail:</label>
                 <input type="text" id="friend_email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             </div>
-
         </div>
-        <button type="submit" >
+
+        <button type="submit" onclick="validateFormNewsletter()">
             Enviar
         </button>
     </form>
