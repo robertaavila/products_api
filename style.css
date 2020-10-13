@@ -134,6 +134,7 @@ html {
 .survey__column_text {
     flex: 63%;
     padding-right: 3%;
+    line-height: 2.5vh;
 }
 
 .survey__column_form {
@@ -236,6 +237,7 @@ html {
 
 .products .card__img{
     margin: auto;
+    margin-left: 3vw;
     width: auto;
     max-height: 30%;
 }

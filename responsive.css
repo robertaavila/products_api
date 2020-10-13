@@ -1,11 +1,11 @@
 @media (max-width: 768px) {
 
-    .header{
+    .header {
         background-color: transparent;
     }
 
     .header button {
-        border: solid 1px  var(--mediumGray);
+        border: solid 1px var(--mediumGray);
         padding: 10px 20px;
         margin: 0 1vw;
         width: 15vw;
@@ -13,7 +13,7 @@
 
     }
 
-    .header__title{
+    .header__title {
         padding-bottom: 1vh;
         background-color: var(--darkGray);
     }
@@ -25,7 +25,7 @@
         margin-block-end: 0px;
     }
 
-    .header h2{
+    .header h2 {
         font-size: 20px;
         text-align: left;
         margin-left: 3vw;
@@ -37,7 +37,7 @@
         margin: 0 2vw 6vh 3vw;
     }
 
-    .header__row{
+    .header__row {
         display: block;
         height: 20vh;
         background: linear-gradient(
@@ -47,7 +47,7 @@
                 var(--white) 100%);
     }
 
-    .header__column{
+    .header__column {
         width: 80%;
         margin: auto;
     }
@@ -56,21 +56,21 @@
         width: 35vw;
     }
 
-    #header__column_top{
+    #header__column_top {
         margin: auto;
     }
 
-    #header__column_bottom{
+    #header__column_bottom {
         margin: auto;
         margin-top: 4vh;
 
     }
 
-    .header__border_bottom{
-       display: none;
+    .header__border_bottom {
+        display: none;
     }
 
-    .survey{
+    .survey {
         padding-top: 0;
     }
 
@@ -79,9 +79,8 @@
         width: 100%;
     }
 
-    .survey__column_text{
+    .survey__column_text {
         width: 95vw;
-        line-height: 2.5vh;
         padding: 0;
         margin: auto;
         margin-left: 5vw;
@@ -93,41 +92,66 @@
         margin-top: 4vh;
     }
 
-    #survey__inputs input{
+    #survey__inputs input {
         padding: 0.7vh;
         margin-bottom: 2vh;
         width: 95%;
     }
 
-    #survey__button{
-        padding: 1.5vh;
+    #survey__button {
+        padding: 1.3vh;
+        font-size: 16px;
     }
 
-    .products{
+    .products {
         width: 95%;
     }
 
-    #product_itens .card{
+    #product_itens .card {
         width: 95vw;
         padding: 1vw;
-        justify-content: space-evenly;
+        padding-top: 5%;
     }
 
-    #product_itens .card__row{
+    #product_itens .card__row {
         display: flex;
+        width: 95vw;
+        margin: auto;
     }
 
-    #product_itens .card__img{
-        /*margin: 0 2vh;*/
-        /*height: auto;*/
-        /*width: 100%;*/
-        /*width: 100%;*/
+    .card__column_left  .card__img {
+        width: 40vw;
+        max-height: 100%;
         border: solid black 1px;
     }
 
-    #card__
+    .card__row{
+        width: 95vw;
+    }
 
-    .newsletter_form__row{
+    .card__column_right {
+        width: 50vw;
+    }
+
+    .card__column_left {
+        width: 50vw;
+    }
+
+    .card__button_buy {
+        margin-left: 4vw;
+        margin-top: 0.5em;
+        width: 40vw;
+        padding: 0.75vh 0;
+        font-size: 16px;
+    }
+
+    .products__button button {
+        width: 65vw;
+        font-size: 16px;
+        margin-top: 6vh;
+    }
+
+    .newsletter_form__row {
         display: block;
     }
 
