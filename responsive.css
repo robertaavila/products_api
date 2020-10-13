@@ -166,17 +166,17 @@
 
     .newsletter_form__column input{
         margin: 2vh 0;
-        width: 100vw;
-        margin: auto;
+        width: 95vw;
     }
 
     .newsletter_form__column label{
         margin-top: 2vh;
-        margin-bottom: 0;
+        margin-bottom: -1vh;
     }
 
     .newsletter_form__column{
-        width: 95vw;
+        width: 100vw;
+        margin: 0;
     }
 
     .newsletter {
