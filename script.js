@@ -16,7 +16,7 @@ var pageNumber = 1;
     }
 
     var productsPromise = fetch(page)
-
+    var controlInsert = 0;
     productsPromise
         .then(data => data.json())
         .then(data => {
@@ -76,6 +76,12 @@ var pageNumber = 1;
                 })
                 button.innerHTML = 'Comprar';
                 cardRight.appendChild(button);
+
+                controlInsert += 1;
+
+                if(window.innerWidth <= 768 && controlInsert > 4){
+                    return;
+                }
 
                 let product_itens = document.querySelector("#product_itens");
                 product_itens.appendChild(card);

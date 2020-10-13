@@ -220,9 +220,11 @@ html {
 }
 
 .card__button_buy{
-    margin-top: 0.5em;
     width: 100%;
     padding: 0.75vh 0;
+    text-align: center;
+    margin: auto;
+    margin-top: 0.5em;
 }
 
 .products .card__description,.card__old_price, .card__installments {
@@ -237,7 +239,7 @@ html {
 
 .products .card__img{
     margin: auto;
-    margin-left: 3vw;
+    /*margin-left: 3vw;*/
     width: auto;
     max-height: 30%;
 }
@@ -249,7 +251,7 @@ html {
     padding-top: 4vh;
 }
 
-.newsletter__button button{
+.newsletter button{
     padding: 0.75vh 2vw;
 }
 
